@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COOL COOK - your recipes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <style>
+    #side-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      white-space: wrap;
+    }
+    aside img {
+      width: 45%;
+      height: auto;
+      border: black solid 1px;
+    }
+  </style>
+  <body>
+    <header id="container">
+      <div class="top-bar">
+        <img src="../img/fork.png" alt="fork" />
+        <img src="../img/chef.png" alt="chef" />
+        <img src="../img/knife.png" alt="knife" />
+      </div>
+      <div class="top-bar">
+        <img src="../img/logo.svg" alt="logo" style="width: 100%" />
+      </div>
+      <div class="top-bar">TIME <br />DATE</div>
+    </header>
+    <aside id="side-content" style="height: 75vh">
+      <section style="padding-top: 12vh">
+        <img src="../img/search.png" alt="cake" />
+        <img src="../img/star.png" alt="pasta" />
+        <img src="../img/history.png" alt="pizza" />
+        <img src="../img/user.png" alt="pizza" />
+      </section>
+    </aside>
+    <main style="height: 75vh">
+      <form>
+        <input name="email" type="text" placeholder="email@email.com" />
+        <input name="password" type="password" placeholder="password" />
+        <button>LOG IN</button>
+      </form>
+    </main>
+    <aside style="height: 75vh" class="images">
+      <section>
+        <img src="../img/cake.png" alt="cake" />
+        <img src="../img/pasta.png" alt="pasta" />
+        <img src="../img/pizza.png" alt="pizza" />
+      </section>
+    </aside>
+    <div style="clear: both"></div>
+  </body>
+</html>
