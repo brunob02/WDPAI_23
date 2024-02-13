@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  outline: black solid 2px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+:root {
+  --main-color-light: #f9f9f9;
+  --main-color-dark: #bdbdbd;
+}
+
+#container {
+  background-color: var(--main-color-light);
+  display: flex;
+}
+
+.top-bar {
+  height: 25vh;
+  width: calc(100% / 3);
+  border: 1px solid #ccc;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.top-bar img {
+  width: calc(25vw / 3);
+  height: auto;
+  box-sizing: border-box;
+}
+
+aside {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  background-color: var(--main-color-dark);
+  color: var(--main-color-light);
+  text-shadow: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
+  padding: 1vw;
+  text-align: center;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+main {
+  box-sizing: border-box;
+  padding: 1vw;
+  float: left;
+  width: 50%;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside[class='images'] img {
+  height: 20vh;
+  border: var(--main-color-light) solid 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60vh;
+  font-size: 1.3em;
+  background: #ffffffe0;
+  box-shadow: 0px 1px 1px 1px #00000050;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+button {
+  background-color: var(--main-color-light);
+  box-shadow: 0px 1px 1px 1px #00000050;
+  border-radius: 10px;
+  color: black;
+  margin: 1em;
+  line-height: 2em;
+  border: 1px solid black;
+  width: 70%;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+input {
+  background-color: var(--main-color-light);
+  border: 0.1em solid black;
+  padding: 1em;
+  margin: 1em;
+  width: 70%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  font-size: 0.7em;
+}
+
+input:focus {
+  border-color: var(--main-color-dark);
+  border-width: 0.2em;
+  outline: none;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+}
+
+aside[class='left'] section img {
+  box-sizing: border-box;
+  width: 6vw;
+  margin: 0;
+  padding: 0;
+padding-top: 2vh;
+}
+
+aside section div {
+  border-bottom: 1px solid var(--main-color-light);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(75vh / 4);
+}
+
+aside section div:hover {
+background-color: var(--main-color-light);
+cursor: pointer;
+}
