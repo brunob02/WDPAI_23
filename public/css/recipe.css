@@ -1,0 +1,76 @@
+:root {
+  --main-color-light: #f9f9f9;
+  --main-color-dark: #bdbdbd;
+}
+
+.add-button {
+  display: inline-block;
+  background-color: var(--main-color-light);
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 70%;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 1px #00000050;
+  border-radius: 10px;
+  color: black;
+
+  font-size: 1em;
+  border: 1px solid black;
+  line-height: 2em;
+}
+
+.add-button:hover {
+  background-color: var(--main-color-dark);
+  cursor: pointer;
+}
+
+#recipe-form {
+  width: 90%;
+  margin: 1.5em auto;
+  background-color: light;
+  text-align: center;
+  background-color: var(--main-color-light);
+  box-shadow: 0px 0px 2px black;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75vh;
+  text-align: center;
+}
+
+#recipe-form input,
+#recipe-form textarea {
+  width: 90%;
+  font-size: 0.8em;
+  margin: 0.2em;
+}
+
+.recipe-field {
+  margin: 1em 0;
+}
+
+div.ingredients.field img:hover {
+  background-color: var(--main-color-dark);
+  border-radius: 5px;
+}
+
+div.recipe-form-label.field img:hover {
+  background-color: var(--main-color-dark);
+  border-radius: 5px;
+}
+
+div.bin img:hover {
+  background-color: #bdbdbd;
+}
+
+.recipes {
+  margin-left: 1.2em;
+}
